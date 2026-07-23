@@ -1,0 +1,100 @@
+/* IBS Implantes - Components (High-End Clinic) */
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 4px; /* Slight radius for a modern, clinical look */
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  gap: 0.75rem;
+}
+
+.btn--primary {
+  background-color: var(--color-primary-light);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(43, 108, 176, 0.3);
+}
+
+.btn--primary:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 54, 93, 0.4);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* Service Cards */
+.card {
+  background-color: var(--color-bg-base);
+  border: 1px solid var(--color-border);
+  padding: 3rem 2rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+  border-color: var(--color-primary-light);
+}
+
+.card__icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary-light);
+}
+
+.card__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card__text {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+/* Stats / Social Proof Item */
+.stat-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.stat-item__number {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-item__label {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monolito - Arquitetura & Design</title>
+  <meta name="description" content="Projetos residenciais de altíssimo padrão, design de interiores minimalista e arquitetura brutalista em São Paulo.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/sections.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="header__logo">Monolito</a>
+    <nav class="header__nav">
+      <a href="#projetos" class="header__link">Projetos</a>
+      <a href="#about" class="header__link">Manifesto</a>
+      <a href="#application" class="header__link">Application</a>
+    </nav>
+  </header>
+
+  <!-- Hero Asymmetric -->
+  <section class="hero">
+    <div class="hero__text-area">
+      <h1 class="hero__title">
+        ONDE<br>
+        O CONCRETO<br>
+        ENCONTRA<br>
+        O SILÊNCIO.
+      </h1>
+      <p class="hero__subtitle">Projetos residenciais de altíssimo padrão. Arquitetura Brutalista Tropical.</p>
+    </div>
+    <div class="hero__image-area">
+      <img src="src/assets/images/hero_monolito.png" alt="Arquitetura brutalista Monolito">
+    </div>
+  </section>
+
+  <!-- Philosophy (Silence & Space) -->
+  <section class="philosophy" id="about">
+    <h2 class="philosophy__text">
+      Desenhamos abrigos esculturais para pessoas extraordinárias. O concreto bruto em fusão com a natureza. Feitos para envelhecer bem pelos próximos 100 anos.
+    </h2>
+  </section>
+
+  <!-- Masonry Gallery -->
+  <section class="gallery" id="projetos">
+    <div class="container">
+      <div class="gallery__header">
+        <h2 class="gallery__title text-tiny">Projetos Selecionados</h2>
+        <a href="#application" class="btn">Solicitar Análise de Projeto</a>
+      </div>
+      
+      <div class="gallery__grid">
+        <div class="gallery__item">
+          <img src="src/assets/images/hero_monolito.png" alt="Projeto 1">
+        </div>
+        <div class="gallery__item">
+          <!-- Reutilizando a mesma imagem de placeholder, já que a API estourou quota -->
+          <img src="src/assets/images/hero_monolito.png" alt="Projeto 2" style="object-position: left center;">
+        </div>
+        <div class="gallery__item">
+          <img src="src/assets/images/hero_monolito.png" alt="Projeto 3" style="object-position: right top;">
+        </div>
+        <div class="gallery__item">
+          <img src="src/assets/images/hero_monolito.png" alt="Projeto 4" style="object-position: center bottom;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ / Filter (Hidden Info) -->
+  <section class="filter">
+    <div class="filter__container">
+      <div class="filter__header">
+        <h2 class="text-tiny">Dúvidas Frequentes</h2>
+      </div>
+
+      <div class="info-reveal">
+        <div class="info-reveal__header">
+          <h3 class="info-reveal__title">Vocês fazem reforma de apartamento pequeno?</h3>
+          <span class="info-reveal__icon">+</span>
+        </div>
+        <div class="info-reveal__content">
+          <p class="info-reveal__text">Não. Desenvolvemos apenas projetos do zero ou para propriedades a partir de 500m². Acreditamos que nossa linguagem escultural precisa de espaço para respirar.</p>
+        </div>
+      </div>
+
+      <div class="info-reveal">
+        <div class="info-reveal__header">
+          <h3 class="info-reveal__title">Qual é o estilo da Monolito?</h3>
+          <span class="info-reveal__icon">+</span>
+        </div>
+        <div class="info-reveal__content">
+          <p class="info-reveal__text">Brutalista Tropical, minimalista e altamente autoral. Utilizamos materiais em seu estado natural: concreto aparente, madeira carbonizada e pedra bruta, sempre integrados a um paisagismo imersivo.</p>
+        </div>
+      </div>
+
+      <div class="info-reveal">
+        <div class="info-reveal__header">
+          <h3 class="info-reveal__title">Como contrato a Monolito?</h3>
+          <span class="info-reveal__icon">+</span>
+        </div>
+        <div class="info-reveal__content">
+          <p class="info-reveal__text">A admissão de novos clientes é feita mediante análise de fit do projeto através do nosso formulário de Application. Atualmente, nossa lista de espera é de 6 meses para o início de novos estudos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Section -->
+  <section class="application" id="application">
+    <div class="container">
+      <h2 class="application__title">Lista de Espera</h2>
+      <p class="application__text">Morar em um projeto da Monolito não é habitar, é viver dentro de uma escultura que respira. Preencha o application para nossa curadoria analisar seu projeto.</p>
+      <a href="https://wa.me/5511944442222" target="_blank" class="btn btn--solid">Submit Application</a>
+    </div>
+  </section>
+
+  <!-- Massive Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div>
+        <p>São Paulo, SP</p>
+        <p>Rua Oscar Freire, 1000</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://wa.me/5511944442222" target="_blank">Instagram</a>
+        <a href="https://wa.me/5511944442222" target="_blank">LinkedIn</a>
+        <a href="mailto:contact@monolito.com.br">Contact</a>
+      </div>
+    </div>
+    
+    <div class="footer__bottom">
+      <h1 class="footer__logo">MONOLITO</h1>
+    </div>
+  </footer>
+
+  <script>
+    // Accordion interaction
+    const reveals = document.querySelectorAll('.info-reveal');
+    reveals.forEach(reveal => {
+      reveal.addEventListener('click', () => {
+        const content = reveal.querySelector('.info-reveal__content');
+        const icon = reveal.querySelector('.info-reveal__icon');
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+          icon.textContent = '+';
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.textContent = '—';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

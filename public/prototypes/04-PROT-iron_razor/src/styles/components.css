@@ -1,0 +1,99 @@
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 1.25rem 2.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn--accent {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+.btn--accent:hover {
+  background-color: var(--accent-hover);
+  box-shadow: 0 0 20px rgba(181, 133, 74, 0.4);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn--outline:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+/* Cards (Estética de Rótulo) */
+.card {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid rgba(181, 133, 74, 0.1);
+  pointer-events: none;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  background-color: rgba(181, 133, 74, 0.05);
+}
+
+.card-icon {
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  display: inline-flex;
+}
+
+/* Typography Classes */
+.heading-sm {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.heading-md {
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.heading-lg {
+  font-size: 4.5rem;
+  line-height: 1.05;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.accent-text {
+  color: var(--accent);
+  font-style: italic;
+}

@@ -1,0 +1,282 @@
+/* Nexus AI - Sections (High Conversion SaaS) */
+
+/* Hero Section */
+.hero {
+  padding: 160px 0 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle abstract glowing orb in background */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(121, 40, 202, 0.15) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: -0.05em;
+  margin-bottom: 1.5rem;
+  line-height: 1.05;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+/* Integrations Marquee (Subtle) */
+.integrations {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  opacity: 0.6;
+}
+
+.integrations span {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Terminal Section (The Surprise/Decision Engine) */
+.terminal-section {
+  padding: var(--spacing-xl) 0;
+  position: relative;
+}
+
+.terminal-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, rgba(0, 112, 243, 0.05) 0%, transparent 60%);
+  z-index: -1;
+}
+
+.terminal-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.terminal__ui {
+  background: #050505;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.terminal__header {
+  background: #111;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  gap: 6px;
+}
+
+.terminal__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #333;
+}
+
+.terminal__dot:nth-child(1) { background: #FF5F56; }
+.terminal__dot:nth-child(2) { background: #FFBD2E; }
+.terminal__dot:nth-child(3) { background: #27C93F; }
+
+.terminal__body {
+  padding: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #00ff00;
+  line-height: 1.6;
+}
+
+.terminal__line {
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+.terminal__line::before {
+  content: '>';
+  margin-right: 1rem;
+  color: var(--color-text-tertiary);
+}
+.terminal__line--action { color: #fff; }
+.terminal__line--success { color: #0070F3; }
+
+/* Bento Features */
+.features {
+  padding: var(--spacing-xl) 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Make some boxes larger for mathematical asymmetry */
+.bento-grid .bento-box:nth-child(1) { grid-column: span 2; }
+.bento-grid .bento-box:nth-child(4) { grid-column: span 2; }
+
+/* Metrics / Social Proof */
+.metrics {
+  padding: var(--spacing-xl) 0;
+  border-top: 1px solid var(--color-border);
+  background: linear-gradient(180deg, transparent, rgba(255,255,255,0.02));
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.quote {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 300;
+  color: var(--color-text-primary);
+  border-left: 2px solid var(--color-accent-purple);
+  padding-left: 2rem;
+}
+
+.quote__author {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quote__avatar {
+  width: 40px;
+  height: 40px;
+  background: var(--color-bg-surface);
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.stat-card {
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.stat-card__value {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #fff, #888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-card__label {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+/* FAQ */
+.faq {
+  padding: var(--spacing-xl) 0;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Bottom CTA */
+.bottom-cta {
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom-cta::before {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 112, 243, 0.15) 0%, transparent 70%);
+  z-index: -1;
+}
+
+/* Footer */
+.footer {
+  padding: 3rem 0;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .terminal-section .container, .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+  .bento-grid .bento-box {
+    grid-column: 1 / -1 !important;
+  }
+}

@@ -1,0 +1,128 @@
+/* Monolito - Global Styles (Brutalism & Minimalism) */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+
+:root {
+  /* Brutalist Palette */
+  --color-black: #111111;
+  --color-concrete: #8D8D8D;
+  --color-concrete-dark: #333333;
+  --color-white: #F9F9F9;
+  
+  /* Typography */
+  --font-main: 'Helvetica Neue', 'Inter', sans-serif;
+  
+  /* Extreme Proportions */
+  --text-colossal: clamp(4rem, 15vw, 12rem);
+  --text-huge: clamp(3rem, 10vw, 8rem);
+  --text-large: clamp(2rem, 5vw, 4rem);
+  --text-normal: 1rem;
+  --text-tiny: 0.75rem;
+  
+  /* Spacing (Silence/White Space) */
+  --space-unit: 1rem;
+  --space-sm: calc(var(--space-unit) * 2);
+  --space-md: calc(var(--space-unit) * 5);
+  --space-lg: calc(var(--space-unit) * 10);
+  --space-xl: calc(var(--space-unit) * 20);
+  
+  --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  padding: 0 var(--space-md);
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 1000;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+
+.header__logo {
+  font-size: var(--text-tiny);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.header__nav {
+  display: flex;
+  gap: var(--space-sm);
+  font-size: var(--text-tiny);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.header__link:hover {
+  opacity: 0.5;
+}
+
+/* Helpers */
+.text-tiny {
+  font-size: var(--text-tiny);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  color: var(--color-concrete-dark);
+}
+
+.section-padding {
+  padding: var(--space-xl) 0;
+}

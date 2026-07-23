@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  /* Colors - Quiet Luxury / Health Tech */
+  --primary: #FFFFFF; /* Blanc */
+  --primary-alt: #F9F9F6; /* Off-White / Pérola */
+  --accent: #C8B598; /* Dourado Champanhe */
+  --accent-hover: #b59e7e;
+  --tech-blue: #4A6B8C; /* Azul Sereno Tech */
+  
+  --text-dark: #2C2C2C; /* Grafite suave, menos agressivo que preto puro */
+  --text-muted: #7A7A7A;
+  --border-color: rgba(0, 0, 0, 0.06);
+  
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Spacing & Layout */
+  --container-width: 1200px;
+  --section-padding: 6rem 2rem;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background-color: var(--primary);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Base */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400; /* Mais leve para elegância */
+  line-height: 1.2;
+  color: var(--text-dark);
+}
+
+strong, b {
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.section--alt {
+  background-color: var(--primary-alt);
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,237 @@
+/* Header / Nav */
+.header {
+  background-color: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(181, 133, 74, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.header--hidden {
+  transform: translateY(-100%);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--text-main);
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  display: block;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--primary);
+  background-image: linear-gradient(to right, rgba(18, 18, 18, 0.95) 20%, rgba(18, 18, 18, 0.6)), url('../assets/images/hero_iron.png');
+  background-size: cover;
+  background-position: center;
+  padding: 15rem 0 10rem;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 750px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Social Proof */
+.social-proof {
+  background-color: var(--accent);
+  padding: 2rem 0;
+  color: var(--primary);
+}
+
+.proof-metrics {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.metric {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+/* Club/Experience Section */
+.image-showcase {
+  height: 600px;
+  background-image: url('../assets/images/club_iron.png');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+
+.image-showcase::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border: 1px solid rgba(181, 133, 74, 0.3);
+  pointer-events: none;
+}
+
+/* Testimonial */
+.testimonial-card {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 3rem;
+  background-color: transparent;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.testimonial-quote {
+  font-size: 1.7rem;
+  font-style: italic;
+  color: var(--text-main);
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+
+.testimonial-author {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.testimonial-role {
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+}
+
+/* FAQ */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-color);
+  padding: 2.5rem 0;
+}
+
+.faq-question {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.faq-answer {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #0a0a0a;
+  padding: 5rem 0 2rem;
+  border-top: 2px solid var(--accent);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.footer-col h4 {
+  color: var(--accent);
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-col p {
+  color: var(--text-muted);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero {
+    padding: 10rem 0 6rem;
+    min-height: auto;
+  }
+  
+  .heading-lg {
+    font-size: 3rem;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

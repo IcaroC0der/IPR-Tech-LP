@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Colors - Vintage Industrial / Whisky Branding */
+  --primary: #121212; /* Preto Ferro Fundido */
+  --primary-alt: #1a1512; /* Madeira Escura muito profunda */
+  --accent: #B5854A; /* Ouro Velho / Luz Âmbar */
+  --accent-hover: #9c713c;
+  --copper: #C06C47; /* Cobre Metálico */
+  
+  --text-main: #F4F1EA; /* Branco Giz / Marfim */
+  --text-muted: #8b8074;
+  --border-color: rgba(181, 133, 74, 0.2); /* Âmbar muito translúcido */
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Spacing & Layout */
+  --container-width: 1100px;
+  --section-padding: 6rem 2rem;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background-color: var(--primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(circle at 50% 0%, rgba(44, 30, 22, 0.4), var(--primary) 70%);
+}
+
+/* Typography Base */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-main);
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.section--alt {
+  background-color: var(--primary-alt);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.text-center {
+  text-align: center;
+}
