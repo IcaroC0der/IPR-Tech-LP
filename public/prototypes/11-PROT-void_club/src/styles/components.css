@@ -1,0 +1,164 @@
+/* VOID Nightclub - Components (Aggressive Glow) */
+
+/* Glow Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.btn--laser {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid var(--color-laser-red);
+  box-shadow: 0 0 15px rgba(255, 0, 51, 0.3), inset 0 0 10px rgba(255, 0, 51, 0.1);
+}
+
+.btn--laser::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: var(--color-laser-red);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.btn--laser:hover {
+  box-shadow: 0 0 30px rgba(255, 0, 51, 0.6);
+  text-shadow: 0 0 10px #FFFFFF;
+}
+
+.btn--laser:hover::before {
+  transform: scaleX(1);
+}
+
+.btn--purple {
+  background-color: var(--color-neon-purple);
+  color: #FFFFFF;
+  border: 2px solid var(--color-neon-purple);
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+}
+
+.btn--purple:hover {
+  background-color: transparent;
+  box-shadow: 0 0 40px rgba(138, 43, 226, 0.8), inset 0 0 20px rgba(138, 43, 226, 0.4);
+}
+
+/* Neon Stroke Text */
+.text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-text-main);
+  opacity: 0.6;
+}
+
+.text-stroke:hover {
+  color: var(--color-text-main);
+  opacity: 1;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* FAQ Accordion (Neon Lines) */
+.faq-list {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem 0;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.faq-item:hover {
+  border-bottom-color: var(--color-neon-blue);
+}
+
+.faq-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item__title {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  transition: var(--transition-fast);
+  text-transform: none;
+}
+
+.faq-item:hover .faq-item__title {
+  color: var(--color-neon-blue);
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+.faq-item__icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.faq-item__icon::before,
+.faq-item__icon::after {
+  content: '';
+  position: absolute;
+  background-color: var(--color-text-main);
+  transition: var(--transition-fast);
+}
+
+.faq-item__icon::before {
+  top: 9px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.faq-item__icon::after {
+  top: 0;
+  left: 9px;
+  width: 2px;
+  height: 100%;
+}
+
+.faq-item:hover .faq-item__icon::before,
+.faq-item:hover .faq-item__icon::after {
+  background-color: var(--color-neon-blue);
+  box-shadow: 0 0 5px var(--color-neon-blue);
+}
+
+.faq-item.active .faq-item__icon::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.faq-item__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-item__text {
+  padding-top: 1.5rem;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  max-width: 700px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.faq-item.active .faq-item__content {
+  max-height: 200px;
+}

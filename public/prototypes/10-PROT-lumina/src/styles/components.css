@@ -1,0 +1,127 @@
+/* Studio Lumina Beauty - Components (Soft SPA Aesthetic) */
+
+/* Soft Buttons */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+
+.btn--rose {
+  background-color: var(--color-accent-rose);
+  color: #FFFFFF;
+}
+
+.btn--rose:hover {
+  background-color: var(--color-accent-rose-dark);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-text-main);
+  border-color: var(--color-accent-rose);
+}
+
+.btn--outline:hover {
+  background-color: var(--color-accent-rose);
+  color: #FFFFFF;
+}
+
+/* Elegant Icons (SVG Wrappers) */
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--color-accent-rose);
+  stroke-width: 1.2;
+  fill: none;
+}
+
+/* FAQ Accordion */
+.faq-list {
+  border-top: 1px solid rgba(74, 67, 61, 0.1);
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(74, 67, 61, 0.1);
+  padding: 2rem 0;
+  cursor: pointer;
+}
+
+.faq-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item__title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-text-main);
+  transition: var(--transition);
+}
+
+.faq-item:hover .faq-item__title {
+  color: var(--color-accent-rose-dark);
+}
+
+.faq-item__icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.faq-item__icon::before,
+.faq-item__icon::after {
+  content: '';
+  position: absolute;
+  background-color: var(--color-accent-rose);
+  transition: var(--transition);
+}
+
+.faq-item__icon::before {
+  top: 9px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.faq-item__icon::after {
+  top: 0;
+  left: 9px;
+  width: 1px;
+  height: 100%;
+}
+
+.faq-item.active .faq-item__icon::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.faq-item__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.faq-item__text {
+  padding-top: 1rem;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+.faq-item.active .faq-item__content {
+  max-height: 200px;
+}

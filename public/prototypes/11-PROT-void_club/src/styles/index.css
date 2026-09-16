@@ -1,0 +1,152 @@
+/* VOID Nightclub - Global Styles (Visual Impact / Ultra Dark) */
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;600;800&display=swap');
+
+:root {
+  /* Ultra Dark Palette */
+  --color-bg-base: #000000;
+  --color-bg-alt: #0a0a0a;
+  
+  --color-text-main: #FFFFFF;
+  --color-text-muted: #888888;
+  
+  /* Neon Lasers */
+  --color-laser-red: #FF0033;
+  --color-neon-purple: #8A2BE2;
+  --color-neon-blue: #00E5FF;
+  
+  /* Typography */
+  --font-display: 'Syncopate', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  /* Spacing */
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+  --spacing-xxl: 12rem;
+  
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--spacing-md) 0;
+  z-index: 1000;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  color: var(--color-text-main);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.header__nav {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.nav__link {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--color-text-main);
+  position: relative;
+  font-weight: 700;
+}
+
+.nav__link:hover {
+  color: var(--color-laser-red);
+  text-shadow: 0 0 10px var(--color-laser-red);
+}
+
+@media (max-width: 992px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+/* Scroll Animation & Laser Neon Atmosphere Shift */
+section {
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.secret-room.section-active {
+  background-color: #140522;
+  box-shadow: inset 0 0 100px rgba(138, 43, 226, 0.2);
+}
+
+.booking.section-active {
+  background-color: #1a0409;
+  box-shadow: inset 0 0 100px rgba(255, 0, 51, 0.15);
+}

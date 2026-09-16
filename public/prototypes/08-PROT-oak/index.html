@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OAK Fine Dining & Omakase | Alta Gastronomia em São Paulo</title>
+  <meta name="description" content="Uma viagem sensorial de 12 tempos onde a precisão milenar da técnica asiática encontra a riqueza selvagem da Amazônia e do Cerrado. Reservas exclusivas.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/sections.css">
+
+  <!-- Schema Markup LocalBusiness/Restaurant -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "OAK Fine Dining & Omakase",
+    "image": "https://oakfinedining.com.br/assets/images/hero_oak.png",
+    "@id": "https://oakfinedining.com.br",
+    "url": "https://oakfinedining.com.br",
+    "telephone": "+5511922221111",
+    "servesCuisine": "Contemporary Asian Fusion",
+    "priceRange": "$$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Amauri, 300",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "01448-000",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "19:00",
+      "closes": "23:59"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__content">
+      <a href="#" class="header__logo">OAK</a>
+      <nav class="header__nav">
+        <a href="#experience" class="nav__link">A Experiência</a>
+        <a href="#ambience" class="nav__link">O Salão</a>
+        <a href="#reservations" class="nav__link">Reservas</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section (Immersive Storytelling) -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="decor-line" style="margin-bottom: 2rem;"></div>
+      <h1 class="hero__title">Onde a precisão encontra o selvagem.</h1>
+      <p class="hero__subtitle">Menu Degustação em 12 Tempos</p>
+      
+      <div class="hero__actions">
+        <a href="#reservations" class="btn btn--gold">Reservar Mesa</a>
+        <a href="#gift" class="btn btn--outline">Gift Cards</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concept / Sensorial Journey -->
+  <section class="concept" id="experience">
+    <div class="container concept__grid">
+      <div class="concept__image">
+        <img src="src/assets/images/hero_oak.png" alt="Prato contemporâneo OAK">
+      </div>
+      <div class="concept__text-box">
+        <h2 class="concept__title">Não servimos comida. <i>Contamos histórias.</i></h2>
+        <p class="concept__desc">
+          O OAK é uma viagem sensorial profunda. Operamos sob a filosofia do <i>Omakase</i> (deixo aos cuidados do chef), fundindo a técnica milenar asiática com os ingredientes nativos mais puros da Amazônia e do Cerrado.
+        </p>
+        <p class="concept__desc">
+          Não temos cardápio fixo. Nossos 12 pratos mudam diariamente conforme o frescor do que a terra nos oferece a cada manhã.
+        </p>
+        <div class="decor-line" style="margin: 3rem 0 0 0;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Typographic Break -->
+  <section class="quote-break">
+    <h2>A natureza dita o ritmo.<br><span style="color: var(--color-gold); font-style: italic;">Nós apenas traduzimos.</span></h2>
+  </section>
+
+  <!-- Ambience & Wine -->
+  <section class="ambience" id="ambience">
+    <div class="container">
+      <header class="ambience__header">
+        <h2 class="ambience__title">O Santuário</h2>
+        <p style="color: var(--color-text-muted); font-size: 1.125rem;">Apenas 25 lugares por noite. Um ambiente esculpido na meia-luz e na madeira carbonizada.</p>
+      </header>
+
+      <div class="ambience__grid">
+        <div class="ambience__image">
+          <img src="src/assets/images/ambience_oak.png" alt="Salão escuro luxuoso OAK Fine Dining">
+        </div>
+        <div class="ambience__details">
+          <div class="detail-item">
+            <h4>Biodinâmica</h4>
+            <p style="color: var(--color-text-muted);">Nossa adega é composta 100% por rótulos orgânicos e biodinâmicos, selecionados dedo a dedo por nosso Sommelier para criar o <i>pairing</i> perfeito.</p>
+          </div>
+          <div class="detail-item">
+            <h4>Exclusividade</h4>
+            <p style="color: var(--color-text-muted);">Dois turnos impecáveis. O primeiro às 19h e o segundo às 21h30, garantindo que cada mesa receba atenção coreografada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservations & FAQ -->
+  <section class="booking" id="reservations">
+    <div class="container booking__grid">
+      <div class="booking__info">
+        <h3>Reservas & <i>FAQ</i></h3>
+        
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-item__header">
+              <h4 class="faq-item__title">Fazem adaptação para veganos ou alérgicos?</h4>
+              <div class="faq-item__icon"></div>
+            </div>
+            <div class="faq-item__content">
+              <p class="faq-item__text">Sim. Podemos adaptar todo o percurso de 12 tempos, desde que a equipe seja avisada com 48 horas de antecedência no ato da reserva online.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__header">
+              <h4 class="faq-item__title">Qual o dress code do restaurante?</h4>
+              <div class="faq-item__icon"></div>
+            </div>
+            <div class="faq-item__content">
+              <p class="faq-item__text">Esporte Fino / Smart Casual. Para manter a atmosfera de luxo do salão, não é permitida a entrada com regatas, bermudas esportivas ou chinelos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__header">
+              <h4 class="faq-item__title">Existe serviço de Valet?</h4>
+              <div class="faq-item__icon"></div>
+            </div>
+            <div class="faq-item__content">
+              <p class="faq-item__text">Sim. Contamos com serviço de manobrista exclusivo e seguro na porta do restaurante, disponível a partir das 18h30.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking__critic">
+          <p>"A melhor experiência gastronômica de São Paulo. Cada prato do Chef é uma obra de arte indescritível e o serviço de vinhos é impecável."</p>
+          <span>Crítico da Revista Gastronomia SP</span>
+        </div>
+      </div>
+
+      <div class="booking__action" style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 4rem; background: var(--color-bg-base);">
+        <h3 style="font-size: 2.5rem; margin-bottom: 2rem;">Garanta seu lugar.</h3>
+        <p style="color: var(--color-text-muted); margin-bottom: 3rem;">Abertura de agenda todo dia 1º do mês.</p>
+        <a href="#" class="btn btn--gold" style="width: 100%; margin-bottom: 1rem;">Agendar Reserva</a>
+        <a href="#" class="btn btn--outline" id="gift" style="width: 100%;">Comprar Voucher / Gift Card</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="decor-line" style="margin-bottom: 3rem;"></div>
+      <h2 class="footer__logo">OAK</h2>
+      <div class="footer__links">
+        <a href="#">Rua Amauri, 300 - Itaim Bibi</a>
+        <a href="#">Instagram</a>
+        <a href="#">Contato Imprensa</a>
+      </div>
+      <p class="footer__copy">© 2026 OAK Fine Dining. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Header Blur Effect on Scroll
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+
+    // Scroll Reveal Observer & Michelin Mood Shift
+    document.addEventListener('DOMContentLoaded', () => {
+      const revealItems = document.querySelectorAll('section, .concept__text-box, .detail-item, .faq-item, .booking__critic');
+      revealItems.forEach(el => el.classList.add('reveal-on-scroll'));
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            if (entry.target.tagName.toLowerCase() === 'section') {
+              entry.target.classList.add('section-active');
+            }
+          }
+        });
+      }, { threshold: 0.15 });
+
+      revealItems.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

@@ -85,3 +85,24 @@ ul {
 .text-center {
   text-align: center;
 }
+
+/* Scroll Animation & Dynamic Mood Shift */
+.section {
+  transition: background-color 0.8s ease, transform 0.8s ease, box-shadow 0.8s ease;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section--alt.section-active {
+  background-color: #11141c;
+  box-shadow: inset 0 0 100px rgba(213, 0, 0, 0.1);
+}

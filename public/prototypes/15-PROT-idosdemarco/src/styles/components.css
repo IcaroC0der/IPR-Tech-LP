@@ -1,0 +1,109 @@
+/* Idos de Março - Components (Light Brutalism & Nostalgia) */
+
+/* Basic Button (Web 1.0 style) */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+  cursor: pointer;
+  text-decoration: none !important;
+  box-shadow: 4px 4px 0px var(--color-ink);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--color-ink);
+}
+
+.btn--primary {
+  background-color: var(--color-olive);
+  color: var(--color-paper);
+}
+
+/* Light Brutalist Box */
+.box {
+  background-color: var(--color-paper);
+  border: 3px solid var(--color-ink);
+  padding: var(--spacing-md);
+  position: relative;
+  box-shadow: 8px 8px 0px rgba(34,34,34, 0.1);
+}
+
+/* Polaroid Image */
+.polaroid {
+  background-color: #fff;
+  padding: 10px 10px 40px 10px;
+  border: 1px solid #ddd;
+  box-shadow: 3px 5px 15px rgba(0,0,0,0.2);
+  display: inline-block;
+  position: relative;
+  /* Filter to make it look old */
+  filter: sepia(30%) contrast(110%) saturate(90%);
+}
+
+.polaroid img {
+  border: 1px solid #ccc;
+}
+
+/* Tape */
+.tape {
+  position: absolute;
+  background-color: rgba(255, 255, 200, 0.6);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  border-left: 1px dashed rgba(0,0,0,0.1);
+  border-right: 1px dashed rgba(0,0,0,0.1);
+}
+
+.tape--top-center {
+  width: 100px;
+  height: 25px;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  z-index: 5;
+}
+
+/* Music Player Mockup */
+.player {
+  border: 2px solid var(--color-ink);
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.player__btn {
+  width: 40px; height: 40px;
+  border: 2px solid var(--color-ink);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--color-mustard);
+}
+
+.player__btn::after {
+  content: '';
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent var(--color-ink);
+  margin-left: 4px;
+}
+
+.player__info p {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.player__info p strong {
+  color: var(--color-navy);
+}

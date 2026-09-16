@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiva alt-bar | Cultura e Arte em Goiânia</title>
+  <meta name="description" content="O coração da cena independente de Goiânia. Música autoral, arte urbana, drinks justos e comida boa.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/sections.css">
+
+  <!-- Schema Markup LocalBusiness/BarOrPub -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarOrPub",
+    "name": "Shiva alt-bar",
+    "image": "https://shivaaltbar.com.br/assets/images/shiva_hero.png",
+    "@id": "https://shivaaltbar.com.br",
+    "url": "https://shivaaltbar.com.br",
+    "telephone": "+556239963141",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Alameda das Rosas, 1371",
+      "addressLocality": "Goiânia",
+      "addressRegion": "GO",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "18:00",
+      "closes": "02:00"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__content">
+      <a href="#" class="header__logo">SHIVA</a>
+      <nav class="header__nav">
+        <a href="#agenda" class="nav__link">Agenda</a>
+        <a href="#cardapio" class="nav__link">Cardápio</a>
+        <a href="#faq" class="nav__link">F.A.Q</a>
+      </nav>
+      <a href="#agenda" class="btn btn--brick" style="font-size: 1rem; padding: 0.5rem 1rem;">Infos</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__grid">
+      <div>
+        <h1 class="hero__title">ARTE<br>RESISTE<br><span>NA RUA</span></h1>
+        <p class="hero__subtitle">
+          Um espaço democrático sem preconceitos. Música independente, arte urbana e cerveja gelada na calçada.
+        </p>
+        <div class="hero__actions">
+          <a href="#agenda" class="btn btn--amber">Agenda da Semana</a>
+          <a href="#cardapio" class="btn btn--brick">Cardápio Digital</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agenda Lambe-Lambe -->
+  <section class="agenda" id="agenda">
+    <div class="container">
+      <header class="agenda__header">
+        <h2 class="agenda__title">PROGRAMAÇÃO</h2>
+        <p style="margin-top: 1rem; font-family: var(--font-mono); font-size: 0.9rem; color: var(--color-text-muted);">
+          * O couvert artístico é 100% repassado aos músicos locais. Fortaleça a cena!
+        </p>
+      </header>
+
+      <div class="agenda__grid">
+        <!-- Cartaz 1 -->
+        <article class="poster" style="--rot: -2deg;">
+          <h3 class="poster__day">QUINTA</h3>
+          <h4 class="poster__band">JAZZ NA CALÇADA</h4>
+          <p style="color: #555; font-family: var(--font-mono);">Quarteto Raiz + Jam Session</p>
+          <div class="poster__info">
+            <p>19H30 | COUVERT: R$15</p>
+          </div>
+        </article>
+
+        <!-- Cartaz 2 -->
+        <article class="poster" style="--rot: 3deg;">
+          <h3 class="poster__day">SEXTA</h3>
+          <h4 class="poster__band">INDIE NIGHT</h4>
+          <p style="color: #555; font-family: var(--font-mono);">Banda Aurora + DJ K</p>
+          <div class="poster__info">
+            <p>20H00 | COUVERT: R$20</p>
+          </div>
+        </article>
+
+        <!-- Cartaz 3 -->
+        <article class="poster" style="--rot: -1deg;">
+          <h3 class="poster__day">SÁBADO</h3>
+          <h4 class="poster__band">TARDE BRASIL</h4>
+          <p style="color: #555; font-family: var(--font-mono);">Samba, Tropicália e Feira de Vinil</p>
+          <div class="poster__info">
+            <p>16H00 | COUVERT: R$15</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Street Food Section -->
+  <section class="food" id="cardapio">
+    <div class="container food__grid">
+      <div class="food__image">
+        <div class="food__stamp stamp">VEGAN<br>FRIENDLY</div>
+        <img src="src/assets/images/shiva_food.png" alt="Comida de boteco vegana no Shiva" class="img-torn">
+      </div>
+      <div class="food__text">
+        <h2>STREET FOOD<br>COM CONSCIÊNCIA</h2>
+        <p>
+          Nosso cardápio foi pensado para abraçar todo mundo. Das clássicas porções de boteco às melhores opções vegetarianas e veganas do Setor Oeste. Tudo fresco, rápido e sem frescura.
+        </p>
+        <a href="#" class="btn btn--brick">Ver Cardápio Completo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manifesto -->
+  <section class="manifesto">
+    <div class="container">
+      <blockquote>
+        "O Shiva é um refúgio de arte e resistência em Goiânia. O clima é intimista, a comida é sensacional e você sempre sai de lá conhecendo uma banda nova ou pessoas incríveis."
+      </blockquote>
+      <cite>— Pedro H., Músico local.</cite>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <h2>DÚVIDAS FREQUENTES</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h4 class="faq-item__title">Tem opção vegana no cardápio?</h4>
+          <div class="faq-item__content">
+            <p class="faq-item__text">Sim! Nosso cardápio de street food foi pensado para ser super inclusivo, com várias opções deliciosas sem nada de origem animal.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h4 class="faq-item__title">Paga para entrar?</h4>
+          <div class="faq-item__content">
+            <p class="faq-item__text">Depende do dia e da atração. Geralmente cobramos um couvert artístico na portaria que é 100% repassado para as bandas locais. Consulte nossa agenda da semana.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <h4 class="faq-item__title">O ambiente é aberto?</h4>
+          <div class="faq-item__content">
+            <p class="faq-item__text">Sim, nossa área externa na calçada sob as árvores é o ponto alto do bar. Venha aproveitar a brisa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__logo">SHIVA</h2>
+      <div class="footer__info">
+        <p>ALAMEDA DAS ROSAS, 1371 - SETOR OESTE</p>
+        <p>QUARTA A DOMINGO | A PARTIR DAS 18H</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+
+    // Scroll Reveal Observer & Street Art Mood Shift
+    document.addEventListener('DOMContentLoaded', () => {
+      const revealItems = document.querySelectorAll('section, .hero__grid, .poster, .food__text, .faq-item, blockquote');
+      revealItems.forEach(el => el.classList.add('reveal-on-scroll'));
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            if (entry.target.tagName.toLowerCase() === 'section') {
+              entry.target.classList.add('section-active');
+            }
+          }
+        });
+      }, { threshold: 0.15 });
+
+      revealItems.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

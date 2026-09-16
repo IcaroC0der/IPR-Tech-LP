@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOID Nightclub | A Imersão Definitiva em SP</title>
+  <meta name="description" content="A boate premium mais exclusiva de São Paulo. Música eletrônica, Kinetic Lights e VIP Tables.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/sections.css">
+
+  <!-- Schema Markup LocalBusiness/NightClub -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NightClub",
+    "name": "VOID Nightclub",
+    "image": "https://voidclub.com.br/assets/images/hero_void.png",
+    "@id": "https://voidclub.com.br",
+    "url": "https://voidclub.com.br",
+    "telephone": "+5511911110000",
+    "priceRange": "$$$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Gomes de Carvalho, 1500",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "04547-005",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Thursday", "Friday", "Saturday"],
+      "opens": "23:00",
+      "closes": "06:00"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__content">
+      <a href="#" class="header__logo">VOID</a>
+      <nav class="header__nav">
+        <a href="#kinetic" class="nav__link">Experience</a>
+        <a href="#secret" class="nav__link">Secret Room</a>
+        <a href="#booking" class="nav__link">Reservas</a>
+      </nav>
+      <a href="#booking" class="btn btn--laser" style="padding: 0.5rem 1.5rem; font-size: 0.65rem;">Tickets</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title">A REALIDADE<br><span class="text-stroke">FICA LÁ FORA</span></h1>
+      <div class="hero__actions">
+        <a href="#booking" class="btn btn--laser">VIP List</a>
+        <a href="#booking" class="btn btn--purple">Concierge Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kinetic Marquee -->
+  <div class="marquee-wrapper" id="kinetic">
+    <div class="marquee-content">
+      <span>KINETIC LIGHTS</span>
+      <span>INTERNATIONAL DJS</span>
+      <span>OPEN FORMAT</span>
+      <span>SECRET ROOM</span>
+      <span>VIP TABLES</span>
+      <span>KINETIC LIGHTS</span>
+      <span>INTERNATIONAL DJS</span>
+      <span>OPEN FORMAT</span>
+      <span>SECRET ROOM</span>
+      <span>VIP TABLES</span>
+    </div>
+  </div>
+
+  <!-- Secret Room -->
+  <section class="secret-room" id="secret">
+    <div class="container secret__grid">
+      <div class="secret__content">
+        <h2>THE<br>SECRET<br>ROOM</h2>
+        <p class="secret__desc">
+          Oculto atrás da cabine principal. O acesso é restrito e liberado apenas por biometria. Para os membros Black que ditam o ritmo da cidade.
+        </p>
+        <a href="#booking" class="btn btn--purple">Solicitar Acesso Black</a>
+      </div>
+      <div class="secret__image">
+        <img src="src/assets/images/secret_void.png" alt="Interior do Secret Room da VOID Nightclub">
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules / Authority -->
+  <section class="rules">
+    <div class="container">
+      <h3>DRESS CODE</h3>
+      <p class="rules__text">
+        O ACESSO É <span>CHIC & SEXY</span>. A GERÊNCIA RESERVA O <span>DIREITO ABSOLUTO</span> DE ADMISSÃO.
+      </p>
+    </div>
+  </section>
+
+  <!-- Booking & FAQ -->
+  <section class="booking" id="booking">
+    <div class="container booking__grid">
+      <div class="booking__action">
+        <h2 class="booking__title">SECURE<br><span class="text-stroke">YOUR SPOT</span></h2>
+        <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+          <a href="#" class="btn btn--laser">Comprar Ingressos</a>
+          <a href="#" class="btn btn--purple">WhatsApp Concierge</a>
+        </div>
+        
+        <div class="testimonial">
+          <p class="testimonial__quote">"A VOID simplesmente elevou o padrão da noite no Brasil. O sistema de luzes é surreal e a energia da pista é um absurdo!"</p>
+          <span class="testimonial__author">LEO P. — SÓCIO DE STARTUP</span>
+        </div>
+      </div>
+      
+      <div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 2rem; font-family: var(--font-display); color: var(--color-neon-blue);">F.A.Q</h3>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-item__header">
+              <h4 class="faq-item__title">Qual é o dress code da casa?</h4>
+              <div class="faq-item__icon"></div>
+            </div>
+            <div class="faq-item__content">
+              <p class="faq-item__text">Chic & Sexy. É expressamente proibida a entrada de bermuda, regata, chinelo, camisas de time ou correntes exageradas. A gerência reserva o direito de admissão.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__header">
+              <h4 class="faq-item__title">Como reservo um camarote?</h4>
+              <div class="faq-item__icon"></div>
+            </div>
+            <div class="faq-item__content">
+              <p class="faq-item__text">As reservas (VIP Tables) são feitas exclusivamente via WhatsApp com nosso Concierge e estão sujeitas à aprovação e lotação máxima.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__header">
+              <h4 class="faq-item__title">Vocês têm chapelaria?</h4>
+              <div class="faq-item__icon"></div>
+            </div>
+            <div class="faq-item__content">
+              <p class="faq-item__text">Sim, possuímos uma chapelaria premium e altamente segura localizada logo após o front desk.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__logo">VOID</h2>
+      <div class="footer__info">
+        <span>VILA OLÍMPIA, SP</span>
+        <span>•</span>
+        <span>QUI A SAB</span>
+        <span>•</span>
+        <span>23H - 06H</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+
+    // Scroll Reveal Observer & Laser Mood Shift
+    document.addEventListener('DOMContentLoaded', () => {
+      const revealItems = document.querySelectorAll('section, .hero__content, .secret__content, .rules__text, .booking__action, .faq-item');
+      revealItems.forEach(el => el.classList.add('reveal-on-scroll'));
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            if (entry.target.tagName.toLowerCase() === 'section') {
+              entry.target.classList.add('section-active');
+            }
+          }
+        });
+      }, { threshold: 0.15 });
+
+      revealItems.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

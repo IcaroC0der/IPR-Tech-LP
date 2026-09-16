@@ -1,0 +1,145 @@
+/* Psicofagia - Components (Punk Zine / Photocopy) */
+
+/* Cutout Text Style (Like magazine clippings) */
+.cutout {
+  background-color: var(--color-ink);
+  color: var(--color-void);
+  display: inline-block;
+  padding: 5px 15px;
+  font-family: var(--font-display);
+  transform: rotate(-2deg);
+  margin-bottom: 10px;
+}
+
+.cutout--alt {
+  transform: rotate(1deg);
+}
+
+/* Minimalist Button / Punk Tape */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  background-color: var(--color-ink);
+  color: var(--color-void);
+  border: none;
+  cursor: pointer;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transform: rotate(-1deg);
+  transition: transform 0.1s steps(2);
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--color-void);
+  color: var(--color-ink);
+  border: 4px solid var(--color-ink);
+  transform: rotate(2deg) scale(1.1);
+}
+
+.btn--acid {
+  background-color: var(--color-void);
+  color: var(--color-ink);
+  border: 4px solid var(--color-ink);
+}
+
+.btn--acid:hover {
+  background-color: var(--color-ink);
+  color: var(--color-void);
+}
+
+/* Raw Image Container - Extreme Threshold (Photocopy effect) */
+.image-frame {
+  position: relative;
+  display: inline-block;
+}
+
+.img-trippy {
+  /* Extreme contrast to force black and white like a xerox */
+  filter: grayscale(100%) contrast(1000%) brightness(0.9);
+  mix-blend-mode: screen;
+  border: 5px solid var(--color-ink);
+  transform: rotate(2deg);
+}
+
+/* Trippy Box -> Punk Box */
+.trippy-box {
+  background-color: var(--color-void);
+  border: 4px solid var(--color-ink);
+  padding: var(--spacing-md);
+  position: relative;
+}
+
+/* Photo Mural */
+.photo-mural {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  overflow: hidden;
+  padding: var(--spacing-sm) 0;
+}
+
+.mural-item {
+  background-color: var(--color-ink);
+  padding: 10px;
+  border: 2px solid var(--color-ink);
+  transition: transform 0.2s, z-index 0s;
+  position: relative;
+}
+
+.mural-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%) contrast(120%);
+  transition: filter 0.3s ease;
+}
+
+.mural-item:hover .mural-img {
+  filter: grayscale(0%) contrast(100%);
+}
+
+@media (max-width: 768px) {
+  .mural-img {
+    width: 200px;
+    height: 200px;
+    filter: grayscale(0%) contrast(100%);
+  }
+}
+
+.mural-item:hover {
+  transform: scale(1.1) rotate(0deg) !important;
+  z-index: 10;
+}
+
+/* Pseudo-random scattered effect for 10 photos */
+.mural-item:nth-child(1) { transform: rotate(-5deg); margin-top: 20px; }
+.mural-item:nth-child(2) { transform: rotate(3deg); margin-bottom: 30px; }
+.mural-item:nth-child(3) { transform: rotate(-2deg); margin-top: -10px; }
+.mural-item:nth-child(4) { transform: rotate(6deg); margin-left: 20px; }
+.mural-item:nth-child(5) { transform: rotate(-7deg); margin-top: 40px; }
+.mural-item:nth-child(6) { transform: rotate(4deg); margin-bottom: 10px; }
+.mural-item:nth-child(7) { transform: rotate(-3deg); margin-right: 15px; }
+.mural-item:nth-child(8) { transform: rotate(5deg); margin-top: 25px; }
+.mural-item:nth-child(9) { transform: rotate(-6deg); margin-bottom: 20px; }
+.mural-item:nth-child(10) { transform: rotate(2deg); margin-top: 15px; }
+
+/* Tape effect on images */
+.mural-item::before {
+  content: '';
+  position: absolute;
+  top: -10px; left: 50%;
+  transform: translateX(-50%) rotate(-5deg);
+  width: 60px; height: 20px;
+  background-color: var(--color-ink);
+  mix-blend-mode: exclusion;
+}
+.mural-item:nth-child(even)::before {
+  top: auto; bottom: -10px;
+  transform: translateX(-50%) rotate(5deg);
+}

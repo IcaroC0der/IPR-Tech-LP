@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Lumina Beauty | SPA e Salão de Luxo em São Paulo</title>
+  <meta name="description" content="Especialistas em Visagismo, Morena Iluminada e saúde capilar. Uma experiência SPA premium com produtos Kérastase.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/sections.css">
+
+  <!-- Schema Markup LocalBusiness/BeautySalon -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Studio Lumina Beauty",
+    "image": "https://lumina.com.br/assets/images/hero_lumina.png",
+    "@id": "https://lumina.com.br",
+    "url": "https://lumina.com.br",
+    "telephone": "+5511933334444",
+    "priceRange": "$$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Oscar Freire, 800",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "01426-000",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__content">
+      <a href="#" class="header__logo">Lumina</a>
+      <nav class="header__nav">
+        <a href="#authority" class="nav__link">Nossa Alquimia</a>
+        <a href="#experience" class="nav__link">A Experiência</a>
+        <a href="#faq" class="nav__link">Dúvidas</a>
+      </nav>
+      <a href="#book" class="btn btn--outline" style="padding: 0.75rem 1.5rem;">Agendar Avaliação</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title">A sua melhor versão.</h1>
+      <p class="hero__subtitle">Mais que um salão, um refúgio de beleza e bem-estar na cidade. Revelamos o tom perfeito priorizando a saúde impecável dos seus fios.</p>
+      <a href="#book" class="btn btn--rose">Agendar Avaliação pelo WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Authority (Diferenciais) -->
+  <section class="authority" id="authority">
+    <div class="container">
+      <header class="authority__header">
+        <h2>A Nossa Alquimia</h2>
+        <p>Entenda por que não somos apenas um salão de beleza, mas sim um atelier de visagismo e saúde capilar.</p>
+      </header>
+
+      <div class="authority__grid">
+        <div class="authority-card">
+          <div class="authority-card__icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-3.5-5.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm7 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/></svg>
+          </div>
+          <h3>Visagismo Exclusivo</h3>
+          <p>Não copiamos fotos da internet. Estudamos o formato do seu rosto e seu subtom de pele para criar a cor e o corte que mais valorizam sua beleza natural.</p>
+        </div>
+        
+        <div class="authority-card">
+          <div class="authority-card__icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Teste de Mecha Rigoroso</h3>
+          <p>A saúde do seu cabelo é inegociável. Só realizamos qualquer procedimento químico após a aprovação integral do teste de mecha.</p>
+        </div>
+
+        <div class="authority-card">
+          <div class="authority-card__icon">
+            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M20 7h-3V4c0-1.1-.9-2-2-2H9C7.9 2 7 2.9 7 4v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM9 4h6v3H9V4zm11 16H4V9h16v11z"/></svg>
+          </div>
+          <h3>Linha Premium Kérastase</h3>
+          <p>Desde o lavatório até a finalização, trabalhamos unicamente com marcas de alta performance mundial para proteger sua fibra capilar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience / Spa Vibe -->
+  <section class="experience" id="experience">
+    <div class="container experience__grid">
+      <div class="experience__image">
+        <img src="src/assets/images/spa_lumina.png" alt="Interior luxuoso do Studio Lumina Beauty">
+      </div>
+      <div class="experience__content">
+        <h2>Muito além do espelho.</h2>
+        <p>Projetamos o Lumina para ser o seu oásis no meio da cidade. Um momento de pausa, luxo e cuidado absoluto.</p>
+        
+        <div class="experience__list">
+          <div class="experience__item">
+            <svg class="icon-svg experience__item-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div>
+              <h4>Menu de Drinks e Cafés</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted);">Desfrute de cappuccinos especiais e drinks autorais enquanto cuidamos de você.</p>
+            </div>
+          </div>
+          <div class="experience__item">
+            <svg class="icon-svg experience__item-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div>
+              <h4>Suíte da Noiva</h4>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted);">Um espaço de 50m² reservado exclusivamente para você e suas madrinhas no dia mais importante da sua vida.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust (Testimonial & FAQ) -->
+  <section class="trust" id="faq">
+    <div class="container trust__grid">
+      <div id="book">
+        <div class="testimonial">
+          <p class="testimonial__quote">"Encontrei no Studio Lumina o loiro perfeito que sempre sonhei, sem estragar ou quebrar meu cabelo. O atendimento desde a recepção até o lavatório é impecável, me senti uma rainha o dia inteiro."</p>
+          <span class="testimonial__author">Camila T., Arquiteta</span>
+        </div>
+        
+        <div style="margin-top: 3rem;">
+          <h3 style="font-size: 2rem; margin-bottom: 1rem;">Pronta para a transformação?</h3>
+          <a href="#" class="btn btn--rose">Chamar no WhatsApp</a>
+        </div>
+      </div>
+      
+      <div>
+        <h3 style="font-size: 2rem; margin-bottom: 2rem;">Dúvidas Frequentes</h3>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-item__header">
+              <h4 class="faq-item__title">Vocês fazem teste de mecha?</h4>
+              <div class="faq-item__icon"></div>
+            </div>
+            <div class="faq-item__content">
+              <p class="faq-item__text">Sim, o teste de mecha é rigoroso e obrigatório em nosso salão para garantir a saúde total dos fios antes de qualquer procedimento de descoloração.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__header">
+              <h4 class="faq-item__title">Quais marcas vocês utilizam?</h4>
+              <div class="faq-item__icon"></div>
+            </div>
+            <div class="faq-item__content">
+              <p class="faq-item__text">Trabalhamos exclusivamente com as linhas profissionais da Kérastase e Braé nos lavatórios e nos tratamentos profundos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item__header">
+              <h4 class="faq-item__title">Vocês têm pacote de Dia da Noiva?</h4>
+              <div class="faq-item__icon"></div>
+            </div>
+            <div class="faq-item__content">
+              <p class="faq-item__text">Sim, possuímos uma suíte exclusiva totalmente reservada para a noiva e suas madrinhas, com serviço de catering premium e total privacidade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__logo">Lumina</h2>
+      <div class="footer__info">
+        <span>Rua Oscar Freire, 800 - Jardins</span>
+        <span>Terça a Sábado, das 09h às 20h</span>
+      </div>
+      <p class="footer__copy">© 2026 Studio Lumina Beauty. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        faqItems.forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

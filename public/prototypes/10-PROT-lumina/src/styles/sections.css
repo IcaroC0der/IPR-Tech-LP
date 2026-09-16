@@ -1,0 +1,231 @@
+/* Studio Lumina Beauty - Sections (SPA Aesthetic & Trust) */
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--color-bg-blush);
+}
+
+.hero__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-image: url('../assets/images/hero_lumina.png');
+  background-size: cover;
+  background-position: center;
+  mask-image: linear-gradient(to right, transparent, black 15%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding-top: 10vh;
+}
+
+.hero__title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-main);
+}
+
+.hero__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-lg);
+  line-height: 1.8;
+  max-width: 450px;
+}
+
+/* Authority / Diferenciais */
+.authority {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--color-bg-base);
+}
+
+.authority__header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.authority__header h2 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.authority__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.authority-card {
+  text-align: center;
+  padding: var(--spacing-md);
+}
+
+.authority-card__icon {
+  margin: 0 auto var(--spacing-md);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--color-bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authority-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.authority-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Experience / Ambience */
+.experience {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--color-bg-alt);
+}
+
+.experience__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.experience__image {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(74, 67, 61, 0.05);
+}
+
+.experience__image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+.experience__content h2 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: var(--spacing-md);
+}
+
+.experience__list {
+  margin-top: var(--spacing-lg);
+}
+
+.experience__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience__item-icon {
+  margin-top: 4px;
+}
+
+.experience__item h4 {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+/* Social Proof & FAQ */
+.trust {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--color-bg-base);
+}
+
+.trust__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xxl);
+}
+
+.testimonial {
+  background-color: var(--color-bg-blush);
+  padding: var(--spacing-lg);
+  border-radius: 4px;
+}
+
+.testimonial__quote {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-main);
+}
+
+.testimonial__author {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent-rose-dark);
+}
+
+/* Footer */
+.footer {
+  padding: var(--spacing-lg) 0;
+  background-color: var(--color-bg-alt);
+  text-align: center;
+  border-top: 1px solid rgba(74, 67, 61, 0.1);
+}
+
+.footer__logo {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.footer__info {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.footer__copy {
+  font-size: 0.75rem;
+  color: #A39B95;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero__bg {
+    width: 100%;
+    opacity: 0.3;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+  .hero__content {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .authority__grid, .experience__grid, .trust__grid {
+    grid-template-columns: 1fr;
+  }
+  .experience__grid {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}

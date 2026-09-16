@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taniguti Scuderia | Alta Performance JDM</title>
+  <meta name="description" content="Centro Automotivo Taniguti Scuderia. Precisão cirúrgica japonesa, diagnóstico avançado e preparação de alta performance.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="src/styles/components.css">
+  <link rel="stylesheet" href="src/styles/sections.css">
+
+</head>
+<body>
+
+  <!-- Marquee Background (JDM Speed Vibe) -->
+  <div class="marquee-bg">
+    <div class="marquee-bg__track">
+      高性能 - タニグチ - 高性能 - タニグチ - 高性能 - タニグチ - 高性能 - タニグチ
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__content">
+      <a href="#" class="header__logo-text">TANIGUTI<span>_</span></a>
+      <nav class="header__nav">
+        <a href="#dna" class="nav__link">O Laboratório</a>
+        <a href="#lab" class="nav__link">Portfólio</a>
+        <a href="#contact" class="nav__link">Localização</a>
+      </nav>
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <button class="theme-toggle" id="themeToggle">CLARO</button>
+        <a href="#contact" class="btn btn--red" style="padding: 0.5rem 1.5rem; font-size: 1.2rem;">
+          <span>ORÇAMENTO</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero__content">
+      <h1 class="hero__title">
+        ENGENHARIA E PRECISÃO.<br>
+        DA PISTA PARA A SUA <span>GARAGEM.</span>
+      </h1>
+      <p class="hero__subtitle">
+        Tradição japonesa de mais de 50 anos aliada à alta performance. Cuidamos do seu daily driven com o mesmo rigor cirúrgico que aplicamos em nossos carros de competição.
+      </p>
+      <a href="#" class="btn btn--red">
+        <span>AGENDAR DIAGNÓSTICO (WHATSAPP)</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- DNA Section -->
+  <section class="dna" id="dna">
+    <div class="container">
+      <header class="dna__header">
+        <h2>NOSSO DNA</h2>
+      </header>
+      
+      <div class="dna__grid">
+        <div class="tech-box dna__card">
+          <div class="metric">
+            <span class="metric__value">01</span>
+            <span class="metric__label">Rigor Japonês</span>
+          </div>
+          <h3>HERANÇA E LIMPEZA</h3>
+          <p>Esqueça oficinas sujas de graxa. Nossa estrutura funciona como um laboratório de engenharia mecânica. Organização militar e precisão cirúrgica em cada parafuso apertado.</p>
+        </div>
+        
+        <div class="tech-box dna__card">
+          <div class="metric">
+            <span class="metric__value">02</span>
+            <span class="metric__label">Tecnologia</span>
+          </div>
+          <h3>DIAGNÓSTICO ELETRÔNICO</h3>
+          <p>Cansado de "trocadores de peças"? Somos especialistas em resolver problemas complexos de injeção eletrônica que outras oficinas premium condenaram.</p>
+        </div>
+        
+        <div class="tech-box dna__card">
+          <div class="metric">
+            <span class="metric__value">03</span>
+            <span class="metric__label">Motorsport</span>
+          </div>
+          <h3>RUA & PISTA</h3>
+          <p>Nossa vasta experiência em competições de altíssimo nível (Drift, Track Days) garante que seu carro receba o melhor acerto possível, seja para ir ao trabalho ou quebrar recordes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lab / Portfolio Section -->
+  <section class="lab" id="lab">
+    <div class="container">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem;">
+        <div>
+          <h2>O LABORATÓRIO</h2>
+          <p style="color: var(--text-secondary); font-size: 1.1rem; max-width: 500px; margin-top: 1rem;">A Taniguti Scuderia possui maquinário de ponta para atender veículos de altíssimo padrão, desde esportivos europeus até lendas do JDM.</p>
+        </div>
+        <div class="logo-spotlight">
+          <img src="src/assets/images/images.jpg" onerror="this.style.display='none'" alt="Logo Taniguti Scuderia">
+        </div>
+      </div>
+      
+      <!-- Gallery with real photos -->
+      <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+        <div class="gallery-item" style="position: relative; overflow: hidden; border: 1px solid var(--text-secondary); aspect-ratio: 4/3;">
+          <img src="src/assets/images/Captura de tela 2026-08-04 124214.png" alt="Lexus Soarer JDM preparado" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s, filter 0.5s; filter: saturate(1.2) contrast(1.1);">
+          <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem; background: linear-gradient(transparent, rgba(0,0,0,0.85)); font-family: var(--font-display); font-size: 1.3rem; text-transform: uppercase; color: #fff;">Preparação JDM</div>
+        </div>
+        <div class="gallery-item" style="position: relative; overflow: hidden; border: 1px solid var(--text-secondary); aspect-ratio: 4/3;">
+          <img src="src/assets/images/Captura de tela 2026-08-04 124252.png" alt="Toyota GT86 na oficina" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s, filter 0.5s; filter: saturate(1.2) contrast(1.1);">
+          <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem; background: linear-gradient(transparent, rgba(0,0,0,0.85)); font-family: var(--font-display); font-size: 1.3rem; text-transform: uppercase; color: #fff;">Setup de Pista</div>
+        </div>
+        <div class="gallery-item" style="position: relative; overflow: hidden; border: 1px solid var(--text-secondary); aspect-ratio: 4/3;">
+          <img src="src/assets/images/Captura de tela 2026-08-04 124128.png" alt="Detalhe roda Mitsubishi alta performance" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s, filter 0.5s; filter: saturate(1.2) contrast(1.1);">
+          <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 1rem; background: linear-gradient(transparent, rgba(0,0,0,0.85)); font-family: var(--font-display); font-size: 1.3rem; text-transform: uppercase; color: #fff;">Alta Performance</div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="#" class="btn"><span>VER PORTFÓLIO COMPLETO</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Testimonial Section -->
+  <section class="contact-section" id="contact">
+    <div class="container contact__grid">
+      <div class="testimonial">
+        <blockquote>
+          A Taniguti não é uma oficina, é um laboratório de engenharia mecânica. A precisão japonesa deles na preparação do meu carro de pista é inigualável.
+        </blockquote>
+        <cite>PILOTO PROFISSIONAL DE DRIFT</cite>
+      </div>
+      
+      <div class="tech-box contact-info">
+        <h3>LOCALIZAÇÃO E CONTATO</h3>
+        <p>
+          <strong>Endereço:</strong><br>
+          Bairro Jaguaré / Região de Osasco, SP<br>
+          Fácil acesso pela Marginal.
+        </p>
+        <p>
+          <strong>Horário:</strong><br>
+          Segunda a Sexta, das 08h às 18h
+        </p>
+        <a href="#" class="btn btn--red" style="width: 100%; margin-top: var(--spacing-sm);">
+          <span>WHATSAPP: (11) 99999-9999</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>CENTRO AUTOMOTIVO TANIGUTI SCUDERIA © 2026. ALTA PERFORMANCE E TRADIÇÃO JAPONESA.</p>
+    </div>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+
+    toggle.addEventListener('click', function() {
+      const current = html.getAttribute('data-theme');
+      if (current === 'dark') {
+        html.setAttribute('data-theme', 'light');
+        toggle.textContent = 'ESCURO';
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        toggle.textContent = 'CLARO';
+      }
+    });
+
+    // Scroll Reveal Observer & Scuderia Crimson Mood Shift
+    document.addEventListener('DOMContentLoaded', () => {
+      const revealItems = document.querySelectorAll('section, .dna__card, .gallery-item, .contact-info, .testimonial');
+      revealItems.forEach(el => el.classList.add('reveal-on-scroll'));
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            if (entry.target.tagName.toLowerCase() === 'section') {
+              entry.target.classList.add('section-active');
+            }
+          }
+        });
+      }, { threshold: 0.15 });
+
+      revealItems.forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>

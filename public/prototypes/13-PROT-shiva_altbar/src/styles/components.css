@@ -1,0 +1,103 @@
+/* Shiva alt-bar - Components (Grunge / Street Art) */
+
+/* Tape / Marker Button */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--color-bg-base);
+  background-color: var(--color-text-main);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  /* Tape look */
+  clip-path: polygon(2% 0, 98% 2%, 100% 98%, 0 100%);
+}
+
+.btn:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.btn--amber {
+  background-color: var(--color-amber);
+}
+
+.btn--brick {
+  background-color: var(--color-brick);
+  color: var(--color-text-main);
+}
+
+/* Vegan Stamp */
+.stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border: 4px solid var(--color-brick);
+  border-radius: 50%;
+  color: var(--color-brick);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.1;
+  transform: rotate(-15deg);
+  opacity: 0.8;
+  /* Distressed look */
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Torn Image Edge (Grunge) */
+.img-torn {
+  position: relative;
+  border: 8px solid var(--color-text-main);
+  box-shadow: 10px 10px 0 rgba(0,0,0,0.5);
+  /* Irregular paper mask */
+  clip-path: polygon(0 2%, 98% 0, 100% 98%, 2% 100%);
+}
+
+/* Basic Accordion */
+.faq-list {
+  border-top: 2px dashed var(--color-text-muted);
+}
+
+.faq-item {
+  border-bottom: 2px dashed var(--color-text-muted);
+  padding: 1.5rem 0;
+  cursor: pointer;
+}
+
+.faq-item__title {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-text-main);
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
+}
+
+.faq-item:hover .faq-item__title {
+  color: var(--color-amber);
+}
+
+.faq-item__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item__text {
+  padding-top: 1rem;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.faq-item.active .faq-item__content {
+  max-height: 300px;
+}

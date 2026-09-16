@@ -1,0 +1,322 @@
+/* Taniguti Scuderia - Sections (Motorsport Grid) */
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: calc(80px + var(--spacing-xl)) 0 var(--spacing-xl);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero__title {
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.85;
+  margin-bottom: var(--spacing-md);
+  text-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+
+.hero__title span {
+  color: var(--color-red);
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+  max-width: 600px;
+  border-left: 2px solid var(--color-red);
+  padding-left: 15px;
+  line-height: 1.6;
+}
+
+/* The DNA Section */
+.dna {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--bg-primary);
+  position: relative;
+  transition: background-color 0.4s;
+}
+
+.dna::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-red), transparent);
+}
+
+.dna__header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.dna__header h2 {
+  font-size: 4rem;
+}
+
+.dna__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.dna__card h3 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.dna__card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+/* Portfolio / Lab Section */
+.lab {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--bg-secondary);
+  position: relative;
+  transition: background-color 0.4s;
+}
+
+.lab::after {
+  content: '';
+  position: absolute;
+  bottom: 0; right: 0; width: 50vw; height: 100%;
+  background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.05) 0px, rgba(0,0,0,0.05) 10px, transparent 10px, transparent 20px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Gallery Items */
+.gallery-item:hover img {
+  transform: scale(1.08);
+  filter: saturate(1.5) contrast(1.2) !important;
+}
+
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: -1px; width: 20px; height: 20px;
+  border-top: 3px solid var(--color-red);
+  border-left: 3px solid var(--color-red);
+  z-index: 3;
+  transition: var(--transition);
+}
+
+.gallery-item:hover::before {
+  width: 100%; height: 100%;
+  opacity: 0.3;
+}
+
+.lab__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.lab__content h2 {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.lab__content p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+/* Logo Display - Spinning Wheel Effect */
+.logo-spotlight {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; /* CRITICAL: contain the wheel */
+  min-height: 350px;
+}
+
+/* The spinning wheel behind the logo */
+.logo-spotlight::before {
+  content: '';
+  position: absolute;
+  width: 320px; height: 320px;
+  border-radius: 50%;
+  border: 3px solid rgba(229,0,0,0.3);
+  border-top: 3px solid var(--color-red);
+  border-right: 3px solid var(--color-red);
+  box-shadow: 0 0 40px rgba(229,0,0,0.15), inset 0 0 40px rgba(229,0,0,0.05);
+  animation: wheel-spin 4s linear infinite;
+}
+
+/* Inner spokes of the wheel */
+.logo-spotlight::after {
+  content: '';
+  position: absolute;
+  width: 270px; height: 270px;
+  border-radius: 50%;
+  background: 
+    conic-gradient(
+      from 0deg,
+      transparent 0deg, rgba(229,0,0,0.08) 30deg, transparent 60deg,
+      transparent 60deg, rgba(229,0,0,0.08) 90deg, transparent 120deg,
+      transparent 120deg, rgba(229,0,0,0.08) 150deg, transparent 180deg,
+      transparent 180deg, rgba(229,0,0,0.08) 210deg, transparent 240deg,
+      transparent 240deg, rgba(229,0,0,0.08) 270deg, transparent 300deg,
+      transparent 300deg, rgba(229,0,0,0.08) 330deg, transparent 360deg
+    );
+  animation: wheel-spin 6s linear infinite reverse;
+}
+
+@keyframes wheel-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.logo-spotlight img {
+  position: relative;
+  z-index: 2;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* Testimonial & Contact */
+.contact-section {
+  padding: var(--spacing-xxl) 0;
+  background-color: var(--bg-primary);
+  transition: background-color 0.4s;
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+.testimonial {
+  position: relative;
+  padding-top: var(--spacing-md);
+}
+
+.testimonial::before {
+  content: '"';
+  position: absolute;
+  top: -20px; left: 0;
+  font-family: var(--font-display);
+  font-size: 8rem;
+  color: rgba(229, 0, 0, 0.15);
+  line-height: 1;
+}
+
+.testimonial blockquote {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: var(--spacing-md);
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial cite {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-red);
+  font-style: normal;
+  display: block;
+}
+
+.contact-info h3 {
+  color: var(--color-red);
+  margin-bottom: var(--spacing-md);
+}
+
+.contact-info p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--footer-bg);
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+  transition: background-color 0.4s;
+}
+
+.footer p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .dna__grid, .gallery-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-md);
+  }
+  .lab__grid, .contact__grid {
+    grid-template-columns: 1fr;
+  }
+  .dna__header h2,
+  .lab__content h2 {
+    font-size: 2.5rem;
+  }
+  .testimonial::before {
+    font-size: 4rem;
+    top: -5px;
+  }
+  .testimonial blockquote {
+    font-size: 1.3rem;
+  }
+  .hero {
+    padding: calc(80px + var(--spacing-lg)) 0 var(--spacing-lg);
+  }
+  .dna, .lab, .contact-section {
+    padding: var(--spacing-xl) 0;
+  }
+  /* Shrink the wheel on mobile */
+  .logo-spotlight {
+    min-height: 250px;
+  }
+  .logo-spotlight::before {
+    width: 220px; height: 220px;
+  }
+  .logo-spotlight::after {
+    width: 180px; height: 180px;
+  }
+  .logo-spotlight img {
+    max-width: 140px;
+    max-height: 140px;
+  }
+  .hero__title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+  /* Buttons full width on mobile */
+  .lab__content .btn,
+  .contact-info .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,147 @@
+/* Idos de Março - Global Styles (Midwest Emo / Web 1.0) */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  /* Faded Autumn Palette */
+  --color-paper: #F4F1EA; /* Old Paper Beige */
+  --color-mustard: #D4A373; /* Faded Mustard */
+  --color-olive: #6B705C; /* Olive Green */
+  --color-navy: #3A5A40; /* Washed Navy */
+  --color-ink: #222222; /* Pen Ink Black */
+  
+  /* Typography */
+  --font-hand: 'Caveat', cursive;
+  --font-mono: 'Courier Prime', monospace;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  
+  --transition: all 0.2s ease-in-out;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  position: relative;
+  
+  /* Notebook Paper Grid */
+  background-image: 
+    linear-gradient(rgba(107, 112, 92, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107, 112, 92, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Add a subtle vignette / noise overlay */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(circle, transparent 40%, rgba(34, 34, 34, 0.05) 150%);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-hand);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-navy);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-navy);
+  transition: var(--transition);
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--color-mustard);
+  text-decoration: underline wavy var(--color-mustard) 2px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Container */
+.container {
+  max-width: 1000px; /* Narrower for that old web feel */
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* Header */
+.header {
+  padding: var(--spacing-md) 0;
+  border-bottom: 3px solid var(--color-ink);
+  background-color: rgba(244, 241, 234, 0.9);
+  backdrop-filter: blur(2px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: var(--font-hand);
+  font-size: 2.5rem;
+  color: var(--color-ink);
+  text-decoration: none !important;
+  transform: rotate(-2deg);
+}
+
+.header__nav {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.nav__link {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  text-transform: lowercase;
+  color: var(--color-ink);
+}
+
+.nav__link::before {
+  content: '>';
+  margin-right: 5px;
+  color: var(--color-mustard);
+  opacity: 0;
+}
+
+.nav__link:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}

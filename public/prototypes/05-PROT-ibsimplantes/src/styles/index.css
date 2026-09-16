@@ -146,3 +146,23 @@ img {
     display: none;
   }
 }
+
+/* Scroll Animation & Ice-Blue Mood Shift */
+section {
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.clinic.section-active {
+  background-color: #ebf3fb;
+}

@@ -5,13 +5,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Maximize, Minimize } from "lucide-react";
 
 const PROTOTYPES = [
-  { name: "Macedo Bastos", path: "/prototypes/01-PROT-macedo-bastos/index.html" },
   { name: "Studio V8", path: "/prototypes/02-PROT-studio-v8/index.html" },
-  { name: "Blanc Odonto", path: "/prototypes/03-PROT-blanc_odonto/index.html" },
   { name: "Iron Razor", path: "/prototypes/04-PROT-iron_razor/index.html" },
   { name: "IBS Implantes", path: "/prototypes/05-PROT-ibsimplantes/index.html" },
   { name: "Monolito", path: "/prototypes/06-PROT-monolito/index.html" },
-  { name: "Nexus", path: "/prototypes/07-PROT-nexus/index.html" }
+  { name: "Oak", path: "/prototypes/08-PROT-oak/index.html" },
+  { name: "Taniguti", path: "/prototypes/17-PROT-taniguti_scuderia/index.html" },
+  { name: "Aurelia", path: "/prototypes/09-PROT-aurelia/index.html" },
+  { name: "Psicofagia", path: "/prototypes/16-PROT-psicofagia/index.html" },
+  { name: "Void Club", path: "/prototypes/11-PROT-void_club/index.html" },
+  { name: "Shiva Alt Bar", path: "/prototypes/13-PROT-shiva_altbar/index.html" }
 ];
 
 export function PrototypeShowcase() {
