@@ -94,7 +94,7 @@ export default function Home() {
           <p className="text-lg text-[#222222] dark:text-brand-gray-medium mb-12 max-w-xl font-medium">
             Projetos de alto calibre exigem parcerias à altura. Agende uma reunião executiva para discutirmos a arquitetura da sua próxima plataforma.
           </p>
-          <a href="mailto:contato@iprtech.com" className="bg-brand-black text-brand-white dark:bg-brand-white dark:text-brand-black px-12 py-5 text-sm font-bold tracking-widest uppercase hover:bg-brand-gray-dark transition-colors">
+          <a href="https://wa.me/5562994919324" target="_blank" rel="noopener noreferrer" className="bg-brand-black text-brand-white dark:bg-brand-white dark:text-brand-black px-12 py-5 text-sm font-bold tracking-widest uppercase hover:bg-brand-gray-dark transition-colors">
             Falar com a IPR Tech
           </a>
         </div>
